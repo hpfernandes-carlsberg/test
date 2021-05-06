@@ -26,7 +26,6 @@ jobs:
           # set path to Robot Framework results report.
           path: ${{ github.workspace }}/output
           
-          
      - name: Send email
        uses: devellany/send-mail@v1.0.2
        with:

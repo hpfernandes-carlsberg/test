@@ -32,9 +32,9 @@ jobs:
           # Required mail server address:
           server_address: smtp.gmail.com
         # Required mail server port:
-          server_port: 465
+          server_port: 587
         # Required mail server username:
-          username: hf.carlsberg
+          username: hf.carlsberg@gmail.com
         # Required mail server password:
           password: QhIUHnroOxklhs0T9vJE
         # Required mail subject:

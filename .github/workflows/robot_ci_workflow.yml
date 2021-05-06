@@ -26,17 +26,17 @@ jobs:
           # set path to Robot Framework results report.
           path: ${{ github.workspace }}/output
           
-     - name: Send email
-       uses: devellany/send-mail@v1.0.2
-       with:
-          host: smtp.gmail.com
-          account: hf.carlsberg
-          password: QhIUHnroOxklhs0T9vJE
-          sender: devellany
-          from: hugo.fernandes@carlsberg.com
-          subject: Github Actions job result
-          body: test
-          #attachments: '[{"path":"README.md"}]'
-          to: hugo.fernandes@boost-it.pt
-          
+    - name: Send email
+        uses: devellany/send-mail@v1.0.2
+        with:
+            host: smtp.gmail.com
+            account: hf.carlsberg
+            password: QhIUHnroOxklhs0T9vJE
+            sender: devellany
+            from: hugo.fernandes@carlsberg.com
+            subject: Github Actions job result
+            body: test
+            #attachments: '[{"path":"README.md"}]'
+            to: hugo.fernandes@boost-it.pt
+                  
 

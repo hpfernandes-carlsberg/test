@@ -40,26 +40,4 @@ jobs:
           #attachments: '[{"path":"README.md"}]'
           to: hugo.fernandes@boost-it.pt
           
-      - name: Send mail
-        uses: dawidd6/action-send-mail@v3.1.0
-        with:
-          # Required mail server address:
-          server_address: smtp.gmail.com
-        # Required mail server port:
-          server_port: 587
-        # Required mail server username:
-          username: hf.carlsberg
-        # Required mail server password:
-          password: QhIUHnroOxklhs0T9vJE
-        # Required mail subject:
-          subject: Github Actions job result
-        # Required recipients' addresses:
-          to: hugo.fernandes@boost-it.pt
-        # Required sender full name (address can be skipped):
-          from: hugo.fernandes@carlsberg.com
-        # Optional whether this connection use TLS (default is true if server_port is 465)
-          secure: true
-        # Optional plain body:
-          body: Build job of ${{github.repository}} completed successfully!
-        # Optional unsigned/invalid certificates allowance:
-          #ignore_cert: true
+

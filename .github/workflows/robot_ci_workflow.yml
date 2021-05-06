@@ -26,6 +26,20 @@ jobs:
           # set path to Robot Framework results report.
           path: ${{ github.workspace }}/output
           
+          
+     - name: Send email
+       uses: devellany/send-mail@v1.0.2
+       with:
+          host: smtp.gmail.com
+          account: hf.carlsberg
+          password: QhIUHnroOxklhs0T9vJE
+          sender: devellany
+          from: hugo.fernandes@carlsberg.com
+          subject: Github Actions job result
+          body: test
+          #attachments: '[{"path":"README.md"}]'
+          to: hugo.fernandes@boost-it.pt
+          
       - name: Send mail
         uses: dawidd6/action-send-mail@v3.1.0
         with:
@@ -42,7 +56,7 @@ jobs:
         # Required recipients' addresses:
           to: hugo.fernandes@boost-it.pt
         # Required sender full name (address can be skipped):
-          from: Luke Skywalker
+          from: hugo.fernandes@carlsberg.com
         # Optional whether this connection use TLS (default is true if server_port is 465)
           secure: true
         # Optional plain body:

@@ -36,7 +36,7 @@ jobs:
         # Required mail server username:
           username: hf.carlsberg@gmail.com
         # Required mail server password:
-          password: QhIUHnroOxklhs0T9vJE
+          password: .
         # Required mail subject:
           subject: Github Actions job result
         # Required recipients' addresses:

@@ -32,7 +32,7 @@ jobs:
           # Required mail server address:
           server_address: smtp.gmail.com
         # Required mail server port:
-          server_port: 465
+          server_port: 587
         # Required mail server username:
           username: hf.carlsberg@gmail.com
         # Required mail server password:
@@ -48,4 +48,4 @@ jobs:
         # Optional plain body:
           body: Build job of ${{github.repository}} completed successfully!
         # Optional unsigned/invalid certificates allowance:
-          ignore_cert: true
+          #ignore_cert: true
